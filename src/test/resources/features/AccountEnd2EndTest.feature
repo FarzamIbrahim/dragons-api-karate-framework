@@ -9,7 +9,7 @@
 Feature: End-to-End Account Testsing.
 
   Background: API Test Setup
-    * def result = callonce read('CreateToken.feature')
+    * def result = callonce read('generateToken.feature')
     And print result
     * def generatedToken = result.response.token
     Given url "https://tek-insurance-api.azurewebsites.net"
