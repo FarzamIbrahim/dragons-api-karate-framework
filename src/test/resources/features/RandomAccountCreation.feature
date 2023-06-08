@@ -2,7 +2,7 @@
 Feature: Random Account Creation
 
   Background: Setup Test Generate Token
-    * def tokenFeature = callonce read('CreateToken.feature')
+    * def tokenFeature = callonce read('generateToken.feature')
     * def token = tokenFeature.response.token
     Given url "https://tek-insurance-api.azurewebsites.net"
 

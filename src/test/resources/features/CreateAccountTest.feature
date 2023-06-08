@@ -14,7 +14,7 @@ Feature: Create Account Test
   Background: API Test Setup
     #callonce read is Karate Step to execute and read another feature file.
     #the result of callonce can store into new variable using def step.
-    * def result = callonce read('CreateToken.feature')
+    * def result = callonce read('generateToken.feature')
     And print result
     * def generatedToken = result.response.token
     Given url "https://tek-insurance-api.azurewebsites.net"
